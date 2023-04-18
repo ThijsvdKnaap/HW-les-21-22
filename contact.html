@@ -57,21 +57,21 @@ rel="stylesheet">
       <div class="row">
         <div class="col-sm"></div>
         <div class="col-sm-6">
-          <form>
+          <form id="contactform1" action="https://formspree.io/f/mdovnrbq" method="post">
             <p>Vul onderstaande gegevens in om contact op te nemen</p>
             <div class="input-group mb-3">
                 <span class="input-group-text">First and last name</span>
-                <input type="text" aria-label="Voornaam" class="form-control">
-                <input type="text" aria-label="achternaam" class="form-control">
+                <input name="voornaam" type="text" aria-label="Voornaam" class="form-control">
+                <input name="achternaam" type="text" aria-label="achternaam" class="form-control">
               </div>
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="E-mail" aria-label="Username">
+                <input name="email" type="text" class="form-control" placeholder="E-mail" aria-label="Username">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" placeholder="Provider" aria-label="Server">
+                <input name="provider" type="text" class="form-control" placeholder="Provider" aria-label="Server">
               </div>
               <div class="input-group">
                 <span class="input-group-text">Uw bericht</span>
-                <textarea class="form-control" aria-label="Uw bericht"></textarea>
+                <textarea name="bericht" class="form-control" aria-label="Uw bericht"></textarea>
               </div>
               <button type="submit" class="knop btn btn-primary mt-3">Submit</button>
           </form>
